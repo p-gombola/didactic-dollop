@@ -1,10 +1,10 @@
 apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
-name: schedule greeting
+name: other greeting
 
 on:
   schedule:
-    - cron: "6,12,18,24,30,36,42,48,54 * * * *"
+    - cron: "0,15,30,45 * * * *"
 
 jobs:
   greet:
